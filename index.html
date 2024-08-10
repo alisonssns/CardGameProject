@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<div class="dot"></div>
+<body>
+    <section>
+        <div class="enemyHand" id="hand">
+        </div>
+        <div class="enemyBoard" id="board">
+            <div class="enemyDeck" id="deck" onclick="enemy.drawCard(0)"></div>
+            <div class="boardPlaceHolder" onclick="addToBoard(0)"></div>
+            <div class="boardPlaceHolder" onclick="addToBoard(1)"></div>
+            <div class="boardPlaceHolder" onclick="addToBoard(2)"></div>
+            <div class="boardPlaceHolder" onclick="addToBoard(3)"></div>
+            <div class="boardPlaceHolder" onclick="addToBoard(4)"></div>
+        </div>
+    </section>
+    <div class="endTurn" onclick="endTurn()">END TURN</div>
+    <section>
+        <div class="playerBoard" id="board">
+            <div class="boardPlaceHolder" onclick="addToBoard(0)"></div>
+            <div class="boardPlaceHolder" onclick="addToBoard(1)"></div>
+            <div class="boardPlaceHolder" onclick="addToBoard(2)"></div>
+            <div class="boardPlaceHolder" onclick="addToBoard(3)"></div>
+            <div class="boardPlaceHolder" onclick="addToBoard(4)"></div>
+            <div class="playerDeck" id="deck" onclick="player.drawCard(1)"></div>
+        </div>
+        <div class="playerHand" id="hand">
+        </div>
+    </section>
+</body>
+<script src="/src/library.js"></script>
+<script src="/src/turnosCtrl.js"></script>
+<script src="/src/ctrl.js"></script>
+<script src="/src/card.js"></script>
+<script src="/src/startGame.js"></script>
+
+</html>
